@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "focusedbooks:focus_base"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "item": "focusedbooks:book_power"
+  }
+}

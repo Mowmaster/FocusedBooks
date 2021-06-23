@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "focusedbooks:focus_base"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:firework_star"
+    }
+  ],
+  "result": {
+    "item": "focusedbooks:book_quickcharge"
+  }
+}
