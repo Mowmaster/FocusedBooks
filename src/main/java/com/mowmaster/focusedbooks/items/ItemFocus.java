@@ -7,6 +7,7 @@ import net.minecraft.item.Items;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 
 import static com.example.focusedbooks.FocusedBooks.FOCUSED_TAB;
 import static com.mowmaster.focusedbooks.references.Reference.MODID;
@@ -17,16 +18,14 @@ public class ItemFocus extends Item {
     }
 
     public static final Item FOCUS_BASE = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_base"));
-    public static final Item FOCUS_NETHER = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_nether"));
-    public static final Item FOCUS_END = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_end"));
-    public static final Item FOCUS_AIR = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_air"));
-    public static final Item FOCUS_EARTH = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_earth"));
-    public static final Item FOCUS_WATER = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_water"));
-    public static final Item FOCUS_FIRE = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_fire"));
+    public static final Item FOCUS_APOTH = new ItemFocus().setRegistryName(new ResourceLocation(MODID, "focus_apoth"));
 
     @SubscribeEvent
     public static void onItemRegistryReady(RegistryEvent.Register<Item> event)
     {
         event.getRegistry().register(FOCUS_BASE);
+        if(ModList.get().isLoaded("apotheosis")){
+            event.getRegistry().register(FOCUS_APOTH);
+        }
     }
 }

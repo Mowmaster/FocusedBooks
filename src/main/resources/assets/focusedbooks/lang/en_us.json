@@ -1,6 +1,7 @@
 {
   "itemGroup.focusedbooks_tab": "Focused Books",
-  "item.focusedbooks.focus_base": "Focused Base",
+  "item.focusedbooks.focus_base": "Focus Base",
+  "item.focusedbooks.focus_apoth": "Apotheosis Base",
 
   "focusedbooks.isTreasure": "This Enchantment is a Treasure Type Enchantment, and Cannot be enchanted in normal enchantment tables.",
   "focusedbooks.minNeeded": "Est. Min Level Required: ",
@@ -44,5 +45,27 @@
   "item.focusedbooks.book_quickcharge": "Quick Charge Focused Book",
   "item.focusedbooks.book_piercing": "Piercing Focused Book",
   "item.focusedbooks.book_mending": "Mending Focused Book",
-  "item.focusedbooks.book_vanishingcurse": "Vanishing Curse Focused Book"
+  "item.focusedbooks.book_vanishingcurse": "Vanishing Curse Focused Book",
+
+  "item.focusedbooks.book_apothbaneofillagers": "Bane of Illagers Focused Book",
+  "item.focusedbooks.book_apothberserk": "Berserker's Furry Focused Book",
+  "item.focusedbooks.book_apothcapturing": "Capturing Focused Book",
+  "item.focusedbooks.book_apothcrescendo": "Crescendo of Bolts Focused Book",
+  "item.focusedbooks.book_apothdepthminer": "Miner's Fervor Focused Book",
+  "item.focusedbooks.book_apothhellinfusion": "Hell Infusion Focused Book",
+  "item.focusedbooks.book_apothicythorns": "Icy Thorns Focused Book",
+  "item.focusedbooks.book_apothknowledge": "Knowledge of the Ages Focused Book",
+  "item.focusedbooks.book_apothlifemending": "Life-Mending Focused Book",
+  "item.focusedbooks.book_apothmagicprotection": "Occult Aversion Focused Book",
+  "item.focusedbooks.book_apothnaturesblessing": "Natures Blessing Focused Book",
+  "item.focusedbooks.book_apothobliteration": "Obliteration Focused Book",
+  "item.focusedbooks.book_apothrebounding": "Rebounding Focused Book",
+  "item.focusedbooks.book_apothreflective": "Reflective Defenses Focused Book",
+  "item.focusedbooks.book_apothscavenger": "Scavenger Focused Book",
+  "item.focusedbooks.book_apothseainfusion": "Sea Infusion Focused Book",
+  "item.focusedbooks.book_apothshieldbash": "Shield Bash Focused Book",
+  "item.focusedbooks.book_apothsplitting": "Splitting Focused Book",
+  "item.focusedbooks.book_apothstablefooting": "Stable Footing Focused Book",
+  "item.focusedbooks.book_apothtempting": "Tempting Focused Book",
+  "item.focusedbooks.book_apothtrueinfinity": "Endless Quiver Focused Book"
 }
