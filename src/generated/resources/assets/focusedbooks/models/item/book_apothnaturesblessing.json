@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "focusedbooks:item/bookguide",
   "textures": {
-    "layer0": "focusedbooks:item/book_apothnaturesblessing"
+    "bookguide": "focusedbooks:item/bookguide_default",
+    "bookguidetop": "focusedbooks:item/bookguidetop_digger",
+    "bookguideaccent": "focusedbooks:item/bookguideaccent_default"
   }
 }

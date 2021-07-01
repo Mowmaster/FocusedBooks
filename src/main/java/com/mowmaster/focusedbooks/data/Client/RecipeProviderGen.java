@@ -1,7 +1,5 @@
 package com.mowmaster.focusedbooks.data.Client;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonSyntaxException;
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.items.ItemFocus;
 import com.mowmaster.focusedbooks.references.Reference;
@@ -10,18 +8,15 @@ import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.IItemProvider;
-import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.registry.Registry;
+import net.minecraftforge.common.crafting.ConditionalRecipe;
+import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import net.minecraftforge.common.data.ForgeRecipeProvider;
 import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.registries.ForgeRegistry;
+import net.minecraft.advancements.CriteriaTriggers;
 
+import java.util.LinkedList;
 import java.util.function.Consumer;
 
 public class RecipeProviderGen extends ForgeRecipeProvider {
@@ -76,8 +71,8 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
         makeSimpleRecipe(consumer, ":vanilla",ItemEnchantableBook.BOUND_CURSE);
         makeSimpleRecipe(consumer, ":vanilla",ItemEnchantableBook.VANISH_CURSE);
 
-        if(ModList.get().isLoaded("apotheosis"))
-        {
+        //if(ModList.get().isLoaded("apotheosis"))
+        //{
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_BANE);
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_CRAZY);
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_CAPTURE);
@@ -99,7 +94,7 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_FOOTY);
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_SINNER);
         makeSimpleApothRecipe(consumer, ":apotheosis", ItemEnchantableBook.APOTH_NEVERENDING);
-        }
+        //}
 
         ShapedRecipeBuilder.shaped(ItemFocus.FOCUS_BASE)
                 .group(Reference.MODID)
@@ -125,13 +120,18 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
 
     public void makeSimpleApothRecipe(Consumer<IFinishedRecipe> consumer, String groupName, Item item)
     {
-        ShapelessRecipeBuilder.shapeless(item)
-                .group(Reference.MODID + groupName)
-                .requires(Items.BOOK)
-                .requires(ItemFocus.FOCUS_APOTH)
-                .requires(((ItemEnchantableBook)item).getGetIngredient())
-                .unlockedBy("has_item",has(ItemFocus.FOCUS_APOTH))
-                .save(consumer);
+        ConditionalRecipe.builder()
+                .addCondition(new ModLoadedCondition("apotheosis"))
+                .addRecipe(
+                        ShapelessRecipeBuilder.shapeless(item)
+                                .group(Reference.MODID + groupName)
+                                .requires(Items.BOOK)
+                                .requires(ItemFocus.FOCUS_APOTH)
+                                .requires(((ItemEnchantableBook)item).getGetIngredient())
+                                .unlockedBy("has_item",has(ItemFocus.FOCUS_APOTH))
+                        ::save
+                )
+                .build(consumer, new ResourceLocation("focusedbooks", item.getRegistryName().getPath()));
     }
 
 }

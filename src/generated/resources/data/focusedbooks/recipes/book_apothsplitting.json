@@ -1,18 +1,31 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "focusedbooks:apotheosis",
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "item": "minecraft:book"
-    },
-    {
-      "item": "focusedbooks:focus_apoth"
-    },
-    {
-      "item": "minecraft:anvil"
+      "conditions": [
+        {
+          "modid": "apotheosis",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:apotheosis",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "minecraft:air"
+          },
+          {
+            "item": "minecraft:anvil"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_apothsplitting"
+        }
+      }
     }
-  ],
-  "result": {
-    "item": "focusedbooks:book_apothsplitting"
-  }
+  ]
 }

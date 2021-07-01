@@ -1,18 +1,31 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "focusedbooks:apotheosis",
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "item": "minecraft:book"
-    },
-    {
-      "item": "focusedbooks:focus_apoth"
-    },
-    {
-      "item": "minecraft:wheat_seeds"
+      "conditions": [
+        {
+          "modid": "apotheosis",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:apotheosis",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "minecraft:air"
+          },
+          {
+            "item": "minecraft:wheat_seeds"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_apothscavenger"
+        }
+      }
     }
-  ],
-  "result": {
-    "item": "focusedbooks:book_apothscavenger"
-  }
+  ]
 }

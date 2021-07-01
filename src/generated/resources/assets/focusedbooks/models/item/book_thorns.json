@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "focusedbooks:item/bookguide",
   "textures": {
-    "layer0": "focusedbooks:item/book_thorns"
+    "bookguide": "focusedbooks:item/bookguide_default",
+    "bookguidetop": "focusedbooks:item/bookguidetop_chest",
+    "bookguideaccent": "focusedbooks:item/bookguideaccent_default"
   }
 }

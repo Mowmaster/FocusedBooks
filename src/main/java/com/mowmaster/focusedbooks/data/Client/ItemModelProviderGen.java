@@ -3,6 +3,9 @@ package com.mowmaster.focusedbooks.data.Client;
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.references.Reference;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -19,8 +22,9 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
         //withExistingParent("blockname",modLoc("blocklocation"))
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile customBook = new ModelFile.ExistingModelFile(new ResourceLocation(Reference.MODID + ":item/bookguide"),existingFileHelper);
 
-        builder(itemGenerated,"book_protection");
+        /*builder(itemGenerated,"book_protection");
         builder(itemGenerated,"book_fireprotection");
         builder(itemGenerated,"book_featherfall");
         builder(itemGenerated,"book_blastprotection");
@@ -57,12 +61,12 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
         builder(itemGenerated,"book_piercing");
         builder(itemGenerated,"book_mending");
         builder(itemGenerated,"book_bindingcurse");
-        builder(itemGenerated,"book_vanishingcurse");
-        builder(itemGenerated,"focus_base");
+        builder(itemGenerated,"book_vanishingcurse");*/
 
-        if(ModList.get().isLoaded("apotheosis"))
-        {
-            builder(itemGenerated,"book_apothbaneofillagers");
+
+        //if(ModList.get().isLoaded("apotheosis"))
+        //{
+            /*builder(itemGenerated,"book_apothbaneofillagers");
             builder(itemGenerated,"book_apothberserk");
             builder(itemGenerated,"book_apothcapturing");
             builder(itemGenerated,"book_apothcrescendo");
@@ -83,11 +87,121 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
             builder(itemGenerated,"book_apothstablefooting");
             builder(itemGenerated,"book_apothtempting");
             builder(itemGenerated,"book_apothtrueinfinity");
-            builder(itemGenerated,"focus_apoth");
-        }
+            */
+        //}
+
+        //if(ModList.get().isLoaded("apotheosis")) {
+        builderModified(customBook,ItemEnchantableBook.APOTH_BANE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CRAZY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CAPTURE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CRESCENDO);
+        builderModified(customBook,ItemEnchantableBook.APOTH_MINER);
+        builderModified(customBook,ItemEnchantableBook.APOTH_HELLINFUSION);
+        builderModified(customBook,ItemEnchantableBook.APOTH_COLDPOKEY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_KNOWITALL);
+        builderModified(customBook,ItemEnchantableBook.APOTH_VAMPIRE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_WITCHY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_DRYAD);
+        builderModified(customBook,ItemEnchantableBook.APOTH_BYEBYE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_BOING);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CHING);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SCAV);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SEAINFUSION);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CABAL);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SPLITS);
+        builderModified(customBook,ItemEnchantableBook.APOTH_FOOTY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SINNER);
+        builderModified(customBook,ItemEnchantableBook.APOTH_NEVERENDING);
+        builder(itemGenerated,"focus_apoth");
+        //}
+
+        builder(itemGenerated,"focus_base");
+        builderModified(customBook,ItemEnchantableBook.PROT);
+        builderModified(customBook,ItemEnchantableBook.FIRE_PROT);
+        builderModified(customBook,ItemEnchantableBook.BLAST_PROT);
+        builderModified(customBook,ItemEnchantableBook.PROJ_PROT);
+        builderModified(customBook,ItemEnchantableBook.BREATHE);
+        builderModified(customBook,ItemEnchantableBook.WATER_WORKER);
+        builderModified(customBook,ItemEnchantableBook.THORNY);
+        builderModified(customBook,ItemEnchantableBook.FEATHER);
+        builderModified(customBook,ItemEnchantableBook.WATER_JESUS);
+        builderModified(customBook,ItemEnchantableBook.FROSTY_JESUS);
+        builderModified(customBook,ItemEnchantableBook.SOUL_JESUS);
+        builderModified(customBook,ItemEnchantableBook.SHARP);
+        builderModified(customBook,ItemEnchantableBook.DEAD_SHARP);
+        builderModified(customBook,ItemEnchantableBook.SPIDER_SHARP);
+        builderModified(customBook,ItemEnchantableBook.FIRE_SHARP);
+        builderModified(customBook,ItemEnchantableBook.SWEEP_SHARP);
+        builderModified(customBook,ItemEnchantableBook.PUSHY);
+        builderModified(customBook,ItemEnchantableBook.LOOTER);
+        builderModified(customBook,ItemEnchantableBook.POWER_ARROW);
+        builderModified(customBook,ItemEnchantableBook.PUSHY_ARROW);
+        builderModified(customBook,ItemEnchantableBook.FIREY_ARROW);
+        builderModified(customBook,ItemEnchantableBook.UNLIM_ARROW);
+        builderModified(customBook,ItemEnchantableBook.MULTI_CROSS);
+        builderModified(customBook,ItemEnchantableBook.QUICK_CROSS);
+        builderModified(customBook,ItemEnchantableBook.STABBY_CROSS);
+        builderModified(customBook,ItemEnchantableBook.LOYAL_FORK);
+        builderModified(customBook,ItemEnchantableBook.STABBY_FORK);
+        builderModified(customBook,ItemEnchantableBook.WATERY_FORK);
+        builderModified(customBook,ItemEnchantableBook.LIT_FORK);
+        builderModified(customBook,ItemEnchantableBook.FAST_DIG);
+        builderModified(customBook,ItemEnchantableBook.SILK_DIG);
+        builderModified(customBook,ItemEnchantableBook.FORT_DIG);
+        builderModified(customBook,ItemEnchantableBook.LUCKY_PHISH);
+        builderModified(customBook,ItemEnchantableBook.SPEEDY_PHISH);
+        builderModified(customBook,ItemEnchantableBook.UNBREAK);
+        builderModified(customBook,ItemEnchantableBook.FIXERUPPER);
+        builderModified(customBook,ItemEnchantableBook.VANISH_CURSE);
+        builderModified(customBook,ItemEnchantableBook.BOUND_CURSE);
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated,String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
+    }
+
+    private ItemModelBuilder builderModified(ModelFile itemGenerated, Item item) {
+        String path = ((ItemEnchantableBook)item).getRegistryName().getPath();
+        return getBuilder(path).parent(itemGenerated).texture("bookguide", "item/bookguide_default")
+                .texture("bookguidetop", "item/" + getBookTop(((ItemEnchantableBook)item).getEnchantType()))
+                .texture("bookguideaccent", "item/bookguideaccent_default");
+    }
+
+    private String getBookTop(EnchantmentType type)
+    {
+        String returner = "bookguidetop_default";
+        switch (type)
+        {
+            case ARMOR: returner = "bookguidetop_armor";
+            break;
+            case ARMOR_HEAD: returner = "bookguidetop_helm";
+            break;
+            case ARMOR_CHEST: returner = "bookguidetop_chest";
+            break;
+            case ARMOR_LEGS: returner = "bookguidetop_legs";
+            break;
+            case ARMOR_FEET: returner = "bookguidetop_feet";
+            break;
+            case WEAPON: returner = "bookguidetop_weapon";
+            break;
+            case DIGGER: returner = "bookguidetop_digger";
+            break;
+            case FISHING_ROD: returner = "bookguidetop_fish";
+            break;
+            case TRIDENT: returner = "bookguidetop_trident";
+            break;
+            case BREAKABLE: returner = "bookguidetop_breakable";
+            break;
+            case BOW: returner = "bookguidetop_bow";
+            break;
+            case WEARABLE: returner = "bookguidetop_wearable";
+            break;
+            case CROSSBOW: returner = "bookguidetop_crossbow";
+            break;
+            case VANISHABLE: returner = "bookguidetop_default";
+            break;
+        }
+
+        return returner;
     }
 }

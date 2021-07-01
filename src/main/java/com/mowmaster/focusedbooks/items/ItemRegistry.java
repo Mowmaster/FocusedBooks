@@ -14,6 +14,6 @@ public class ItemRegistry
 
     public static void onItemColorsReady(ColorHandlerEvent.Item event)
     {
-
+        ItemEnchantableBook.handleItemColors(event);
     }
 }
