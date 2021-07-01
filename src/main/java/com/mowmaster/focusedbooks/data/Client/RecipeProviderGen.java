@@ -13,10 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import net.minecraftforge.common.data.ForgeRecipeProvider;
-import net.minecraftforge.fml.ModList;
-import net.minecraft.advancements.CriteriaTriggers;
 
-import java.util.LinkedList;
 import java.util.function.Consumer;
 
 public class RecipeProviderGen extends ForgeRecipeProvider {
@@ -120,6 +117,12 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
 
     public void makeSimpleApothRecipe(Consumer<IFinishedRecipe> consumer, String groupName, Item item)
     {
+        /*
+        * Someday i may try to make this work, but till then, will use custom item
+        JsonObject itemName = new JsonObject();
+        itemName.add("item",new JsonPrimitive("apotheosis:tome_armor"));
+        .requires(Ingredient.fromJson(itemName))*/
+
         ConditionalRecipe.builder()
                 .addCondition(new ModLoadedCondition("apotheosis"))
                 .addRecipe(
