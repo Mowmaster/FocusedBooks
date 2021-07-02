@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "ars_nouveau",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:ars_nouveau",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_arsn"
+          },
+          {
+            "item": "minecraft:ghast_tear"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_arsnmanaregen"
+        }
+      }
+    }
+  ]
+}

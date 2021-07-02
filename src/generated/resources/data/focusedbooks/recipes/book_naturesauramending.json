@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "naturesaura",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:naturesaura",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_naturesa"
+          },
+          {
+            "item": "minecraft:oak_leaves"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_naturesauramending"
+        }
+      }
+    }
+  ]
+}

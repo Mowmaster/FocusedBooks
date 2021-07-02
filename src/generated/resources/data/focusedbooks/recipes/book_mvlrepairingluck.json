@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "morevanillalib",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:morevanillalib",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_mvl"
+          },
+          {
+            "item": "minecraft:rabbit_foot"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_mvlrepairingluck"
+        }
+      }
+    }
+  ]
+}

@@ -4,26 +4,26 @@
     {
       "conditions": [
         {
-          "modid": "apotheosis",
+          "modid": "ensorcellation",
           "type": "forge:mod_loaded"
         }
       ],
       "recipe": {
         "type": "minecraft:crafting_shapeless",
-        "group": "focusedbooks:apotheosis",
+        "group": "focusedbooks:ensorcellation",
         "ingredients": [
           {
             "item": "minecraft:book"
           },
           {
-            "item": "minecraft:air"
+            "item": "focusedbooks:focus_ensorcellation"
           },
           {
-            "item": "minecraft:glass"
+            "item": "minecraft:rabbit_stew"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothreflective"
+          "item": "focusedbooks:book_ensorcellationgourmand"
         }
       }
     }

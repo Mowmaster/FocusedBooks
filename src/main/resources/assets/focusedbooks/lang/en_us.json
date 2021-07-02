@@ -3,6 +3,23 @@
   "item.focusedbooks.focus_base": "Focus Base",
   "item.focusedbooks.focus_apoth": "Apotheosis Base",
 
+  "item.focusedbooks.focus_alexs": "Alex's Mobs Base",
+  "item.focusedbooks.focus_arsn": "Ars N Base",
+  "item.focusedbooks.focus_astral": "Astral Sorcery Base",
+  "item.focusedbooks.focus_bef": "Better End Base",
+  "item.focusedbooks.focus_cofhcore": "COFH Base",
+  "item.focusedbooks.focus_ensorcellation": "Ensorcellation Base",
+  "item.focusedbooks.focus_farmersd": "Farmers Delight Base",
+  "item.focusedbooks.focus_gunsnroses": "Guns w/o Roses Base",
+  "item.focusedbooks.focus_mvl": "More Vanilla Lib Base",
+  "item.focusedbooks.focus_mythicb": "Mythic Botany Base",
+  "item.focusedbooks.focus_naturesa": "Natures Aura Base",
+  "item.focusedbooks.focus_pedestals": "Pedestals Base",
+  "item.focusedbooks.focus_travela": "Travel Anchor Base",
+
+  "focusedbooks.disabled": "This Book has Been Disabled Until Further Notice",
+  "focusedbooks.notOnBooks": "This Enchantment Cannot be Obtained with Focused Books",
+  "focusedbooks.cantEnchantTable": "This Enchantment Cannot be Obtained in a Normal Enchanting Table",
   "focusedbooks.isTreasure": "This Enchantment is a Treasure Type Enchantment, and Cannot be enchanted in normal enchantment tables.",
   "focusedbooks.minNeeded": "Est. Min Level Required: ",
   "focusedbooks.maxNeeded": "Est. Max Level Allowed: ",
@@ -67,5 +84,77 @@
   "item.focusedbooks.book_apothsplitting": "Splitting Focused Book",
   "item.focusedbooks.book_apothstablefooting": "Stable Footing Focused Book",
   "item.focusedbooks.book_apothtempting": "Tempting Focused Book",
-  "item.focusedbooks.book_apothtrueinfinity": "Endless Quiver Focused Book"
+  "item.focusedbooks.book_apothtrueinfinity": "Endless Quiver Focused Book",
+
+  "item.focusedbooks.book_alexsboardreturn": "Returning Board Focused Book",
+  "item.focusedbooks.book_alexslavawax": "Lavawaxed Focused Book",
+  "item.focusedbooks.book_alexsserpentfriend": "Serpent Charmer Focused Book",
+  "item.focusedbooks.book_alexsstraddlejump": "Straddle Jump Focused Book",
+
+  "item.focusedbooks.book_arsnmanaboost": "Mana Boost Focused Book",
+  "item.focusedbooks.book_arsnmanaregen": "Mana Regen Focused Book",
+  "item.focusedbooks.book_arsnreactive": "Reactive Focused Book",
+
+  "item.focusedbooks.book_astralnightvision": "Night Vision Focused Book",
+  "item.focusedbooks.book_astralscorchingheat": "Scorching Heat Focused Book",
+
+  "item.focusedbooks.book_befendveil": "End Veil Focused Book",
+
+  "item.focusedbooks.book_cofhcoreholding": "Holding Focused Book",
+
+  "item.focusedbooks.book_ensorcellationairaffinity": "Air Affinity Focused Book",
+  "item.focusedbooks.book_ensorcellationangler": "Angler's Bounty Focused Book",
+  "item.focusedbooks.book_ensorcellationbulwark": "Bulwark Focused Book",
+  "item.focusedbooks.book_ensorcellationcavalier": "Cavalier Focused Book",
+  "item.focusedbooks.book_ensorcellationcursefool": "Curse of Foolishness Focused Book",
+  "item.focusedbooks.book_ensorcellationcursemercy": "Curse of Mercy Focused Book",
+  "item.focusedbooks.book_ensorcellationdamageender": "Ender Disruption Focused Book",
+  "item.focusedbooks.book_ensorcellationdamageillager": "Vigilante Focused Book",
+  "item.focusedbooks.book_ensorcellationdamagevillager": "Outlaw Damage Focused Book",
+  "item.focusedbooks.book_ensorcellationdisplacement": "Displacement Focused Book",
+  "item.focusedbooks.book_ensorcellationexcavating": "Excavating Focused Book",
+  "item.focusedbooks.book_ensorcellationexpboost": "Insight Focused Book",
+  "item.focusedbooks.book_ensorcellationfirerebuke": "Flaming Rebuke Focused Book",
+  "item.focusedbooks.book_ensorcellationfrostaspect": "Frost Aspect Focused Book",
+  "item.focusedbooks.book_ensorcellationfurrowing": "Furrowing Focused Book",
+  "item.focusedbooks.book_ensorcellationgourmand": "Gourmand Focused Book",
+  "item.focusedbooks.book_ensorcellationhunter": "Hunter's Bounty Focused Book",
+  "item.focusedbooks.book_ensorcellationinstigating": "Instigating Focused Book",
+  "item.focusedbooks.book_ensorcellationleech": "Leech Focused Book",
+  "item.focusedbooks.book_ensorcellationmagicedge": "Magic Edge Focused Book",
+  "item.focusedbooks.book_ensorcellationmagicprotection": "Magic Protection Focused Book",
+  "item.focusedbooks.book_ensorcellationphalanx": "Phalanx Focused Book",
+  "item.focusedbooks.book_ensorcellationpilfering": "Pilfering Focused Book",
+  "item.focusedbooks.book_ensorcellationquickdraw": "Quick Draw Focused Book",
+  "item.focusedbooks.book_ensorcellationreach": "Reach Focused Book",
+  "item.focusedbooks.book_ensorcellationsoulbound": "Soulbound Focused Book",
+  "item.focusedbooks.book_ensorcellationtilling": "Tilling Focused Book",
+  "item.focusedbooks.book_ensorcellationtrueshot": "Trueshot Focused Book",
+  "item.focusedbooks.book_ensorcellationvitality": "Vitality Focused Book",
+  "item.focusedbooks.book_ensorcellationvolley": "Volley Focused Book",
+  "item.focusedbooks.book_ensorcellationvorpal": "Vorpal Focused Book",
+  "item.focusedbooks.book_ensorcellationweeding": "Weeding Focused Book",
+
+  "item.focusedbooks.book_farmersbackstabbing": "Backstabbing Focused Book",
+
+  "item.focusedbooks.book_gunsbullseye": "Bullseye Focused Book",
+  "item.focusedbooks.book_gunsimpact": "Impact Focused Book",
+  "item.focusedbooks.book_gunspreserving": "Preserving Focused Book",
+  "item.focusedbooks.book_gunssleightofhand": "Sleight of Hand Focused Book",
+
+  "item.focusedbooks.book_mvlrepairingluck": "Luck of Cheap Repairing Focused Book",
+
+  "item.focusedbooks.book_mythicbhammermobility": "Hammer Mobility Focused Book",
+
+  "item.focusedbooks.book_naturesauramending": "Nature's Mend Focused Book",
+
+  "item.focusedbooks.book_pedestalsupgradeadvanced": "Pedestals Advanced Focused Book",
+  "item.focusedbooks.book_pedestalsupgradearea": "Pedestals Area Focused Book",
+  "item.focusedbooks.book_pedestalsupgradecapacity": "Pedestals Capacity Focused Book",
+  "item.focusedbooks.book_pedestalsupgrademagnet": "Pedestals Magnet Focused Book",
+  "item.focusedbooks.book_pedestalsupgraderange": "Pedestals Range Focused Book",
+  "item.focusedbooks.book_pedestalsupgradespeed": "Pedestals Speed Focused Book",
+
+  "item.focusedbooks.book_travelarange": "Range Focused Book",
+  "item.focusedbooks.book_travelateleportation": "Teleportation Focused Book"
 }

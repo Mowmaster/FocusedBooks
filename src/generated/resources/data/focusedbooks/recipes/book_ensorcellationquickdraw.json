@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "ensorcellation",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:ensorcellation",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_ensorcellation"
+          },
+          {
+            "item": "minecraft:bow"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_ensorcellationquickdraw"
+        }
+      }
+    }
+  ]
+}

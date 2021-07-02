@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "astralsorcery",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:astralsorcery",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_astral"
+          },
+          {
+            "item": "minecraft:blast_furnace"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_astralscorchingheat"
+        }
+      }
+    }
+  ]
+}

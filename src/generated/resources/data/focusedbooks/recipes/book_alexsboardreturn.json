@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "alexsmobs",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:alexsmobs",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_alexs"
+          },
+          {
+            "item": "minecraft:ender_eye"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_alexsboardreturn"
+        }
+      }
+    }
+  ]
+}

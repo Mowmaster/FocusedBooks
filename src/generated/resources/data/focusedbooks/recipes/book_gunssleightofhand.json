@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "gunswithoutroses",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:gunswithoutroses",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_gunsnroses"
+          },
+          {
+            "item": "minecraft:emerald"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_gunssleightofhand"
+        }
+      }
+    }
+  ]
+}

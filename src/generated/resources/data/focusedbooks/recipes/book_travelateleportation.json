@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "travel_anchors",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:travel_anchors",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_travela"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_travelateleportation"
+        }
+      }
+    }
+  ]
+}

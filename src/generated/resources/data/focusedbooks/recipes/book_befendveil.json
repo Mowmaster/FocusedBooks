@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:betterendforge",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_bef"
+          },
+          {
+            "item": "minecraft:chorus_flower"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_befendveil"
+        }
+      }
+    }
+  ]
+}

@@ -16,7 +16,7 @@
             "item": "minecraft:book"
           },
           {
-            "item": "minecraft:air"
+            "item": "focusedbooks:focus_apoth"
           },
           {
             "item": "minecraft:obsidian"

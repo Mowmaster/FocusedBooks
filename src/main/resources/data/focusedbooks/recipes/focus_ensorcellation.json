@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "focusedbooks:focus_base"
+    },
+    {
+      "item": "minecraft:chain"
+    }
+  ],
+  "result": {
+    "item": "focusedbooks:focus_ensorcellation"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ensorcellation"
+    }
+  ]
+}

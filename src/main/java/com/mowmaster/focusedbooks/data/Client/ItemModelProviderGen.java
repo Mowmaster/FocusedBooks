@@ -90,31 +90,6 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
             */
         //}
 
-        //if(ModList.get().isLoaded("apotheosis")) {
-        builderModified(customBook,ItemEnchantableBook.APOTH_BANE);
-        builderModified(customBook,ItemEnchantableBook.APOTH_CRAZY);
-        builderModified(customBook,ItemEnchantableBook.APOTH_CAPTURE);
-        builderModified(customBook,ItemEnchantableBook.APOTH_CRESCENDO);
-        builderModified(customBook,ItemEnchantableBook.APOTH_MINER);
-        builderModified(customBook,ItemEnchantableBook.APOTH_HELLINFUSION);
-        builderModified(customBook,ItemEnchantableBook.APOTH_COLDPOKEY);
-        builderModified(customBook,ItemEnchantableBook.APOTH_KNOWITALL);
-        builderModified(customBook,ItemEnchantableBook.APOTH_VAMPIRE);
-        builderModified(customBook,ItemEnchantableBook.APOTH_WITCHY);
-        builderModified(customBook,ItemEnchantableBook.APOTH_DRYAD);
-        builderModified(customBook,ItemEnchantableBook.APOTH_BYEBYE);
-        builderModified(customBook,ItemEnchantableBook.APOTH_BOING);
-        builderModified(customBook,ItemEnchantableBook.APOTH_CHING);
-        builderModified(customBook,ItemEnchantableBook.APOTH_SCAV);
-        builderModified(customBook,ItemEnchantableBook.APOTH_SEAINFUSION);
-        builderModified(customBook,ItemEnchantableBook.APOTH_CABAL);
-        builderModified(customBook,ItemEnchantableBook.APOTH_SPLITS);
-        builderModified(customBook,ItemEnchantableBook.APOTH_FOOTY);
-        builderModified(customBook,ItemEnchantableBook.APOTH_SINNER);
-        builderModified(customBook,ItemEnchantableBook.APOTH_NEVERENDING);
-        builder(itemGenerated,"focus_apoth");
-        //}
-
         builder(itemGenerated,"focus_base");
         builderModified(customBook,ItemEnchantableBook.PROT);
         builderModified(customBook,ItemEnchantableBook.FIRE_PROT);
@@ -154,6 +129,142 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
         builderModified(customBook,ItemEnchantableBook.FIXERUPPER);
         builderModified(customBook,ItemEnchantableBook.VANISH_CURSE);
         builderModified(customBook,ItemEnchantableBook.BOUND_CURSE);
+
+        //if(ModList.get().isLoaded("apotheosis")) {
+        builderModified(customBook,ItemEnchantableBook.APOTH_BANE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CRAZY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CAPTURE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CRESCENDO);
+        builderModified(customBook,ItemEnchantableBook.APOTH_MINER);
+        builderModified(customBook,ItemEnchantableBook.APOTH_HELLINFUSION);
+        builderModified(customBook,ItemEnchantableBook.APOTH_COLDPOKEY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_KNOWITALL);
+        builderModified(customBook,ItemEnchantableBook.APOTH_VAMPIRE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_WITCHY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_DRYAD);
+        builderModified(customBook,ItemEnchantableBook.APOTH_BYEBYE);
+        builderModified(customBook,ItemEnchantableBook.APOTH_BOING);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CHING);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SCAV);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SEAINFUSION);
+        builderModified(customBook,ItemEnchantableBook.APOTH_CABAL);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SPLITS);
+        builderModified(customBook,ItemEnchantableBook.APOTH_FOOTY);
+        builderModified(customBook,ItemEnchantableBook.APOTH_SINNER);
+        builderModified(customBook,ItemEnchantableBook.APOTH_NEVERENDING);
+        builder(itemGenerated,"focus_apoth");
+        //}
+
+        //if(ModList.get().isLoaded("alexsmobs")) {
+            builderModified(customBook,ItemEnchantableBook.ALEXSMOBS_BRETURN);
+            builderModified(customBook,ItemEnchantableBook.ALEXSMOBS_LAVAWAX);
+            builderModified(customBook,ItemEnchantableBook.ALEXSMOBS_SERPENT);
+            builderModified(customBook,ItemEnchantableBook.ALEXSMOBS_SJUMP);
+        builder(itemGenerated,"focus_alexs");
+        //}
+
+        //if(ModList.get().isLoaded("ars_nouveau")) {
+            builderModified(customBook,ItemEnchantableBook.ARSN_BOOST);
+            builderModified(customBook,ItemEnchantableBook.ARSN_REGEN);
+            builderModified(customBook,ItemEnchantableBook.ARSN_REACTIVE);
+        builder(itemGenerated,"focus_arsn");
+        //}
+
+        //if(ModList.get().isLoaded("astralsorcery")) {
+            builderModified(customBook,ItemEnchantableBook.ASTRAL_VISION);
+            builderModified(customBook,ItemEnchantableBook.ASTRAL_SCORCH);
+        builder(itemGenerated,"focus_astral");
+        //}
+
+        //if(ModList.get().isLoaded("betterendforge")) {
+            builderModified(customBook,ItemEnchantableBook.BETTERENDFORGE_VEIL);
+        builder(itemGenerated,"focus_bef");
+        //}
+
+        //if(ModList.get().isLoaded("cofh_core")) {
+        //builderModified(customBook,ItemEnchantableBook.COFHCORE_HOLDING);
+        //builder(itemGenerated,"focus_cofhcore");
+        //}
+
+        //if(ModList.get().isLoaded("ensorcellation")) {
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_AIRAFF);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_ANGLER);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_BULWARK);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_CAVAL);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_CFOOL);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_CMERCY);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_DAMENDER);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_DAMILLAG);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_DAMVILLA);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_DISPLACE);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_EXCAV);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_XPBOOST);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_FIREREBU);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_FROSTASP);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_FURROW);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_GOURMAND);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_HUNTER);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_INSTIG);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_LEECH);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_MAGEDGE);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_MAGPROT);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_PHALANX);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_PILF);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_QUICKD);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_REACH);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_SOULB);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_TILL);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_TRUESHOT);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_VITALITY);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_VOLLEY);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_VORPAL);
+            builderModified(customBook,ItemEnchantableBook.ENSORCELL_WEEDS);
+        builder(itemGenerated,"focus_ensorcellation");
+        //}
+
+        //if(ModList.get().isLoaded("farmersdelight")) {
+            builderModified(customBook,ItemEnchantableBook.FARMERS_BSTAB);
+        builder(itemGenerated,"focus_farmersd");
+        //}
+
+        //if(ModList.get().isLoaded("gunswithoutroses")) {
+            builderModified(customBook,ItemEnchantableBook.GUNS_BULL);
+            builderModified(customBook,ItemEnchantableBook.GUNS_IMPACT);
+            builderModified(customBook,ItemEnchantableBook.GUNS_PRESRV);
+            builderModified(customBook,ItemEnchantableBook.GUNS_SLEIGHT);
+        builder(itemGenerated,"focus_gunsnroses");
+        //}
+
+        //if(ModList.get().isLoaded("morevanillalib")) {
+            builderModified(customBook,ItemEnchantableBook.MVL_REPAIR);
+        builder(itemGenerated,"focus_mvl");
+        //}
+
+        //if(ModList.get().isLoaded("mythicbotany")) {
+            builderModified(customBook,ItemEnchantableBook.MYTHICB_HAMMA);
+        builder(itemGenerated,"focus_mythicb");
+        //}
+
+        //if(ModList.get().isLoaded("naturesaura")) {
+        builderModified(customBook,ItemEnchantableBook.NATURES_MEND);
+        builder(itemGenerated,"focus_naturesa");
+        //}
+
+        //if(ModList.get().isLoaded("pedestals")) {
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_ADVANCED);
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_AREA);
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_CAP);
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_MAGNET);
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_RANGE);
+            builderModified(customBook,ItemEnchantableBook.PEDESTALS_SPEED);
+        builder(itemGenerated,"focus_pedestals");
+        //}
+
+        //if(ModList.get().isLoaded("travel_anchors")) {
+            builderModified(customBook,ItemEnchantableBook.TRAVELA_RANGE);
+            builderModified(customBook,ItemEnchantableBook.TRAVELA_TELE);
+        builder(itemGenerated,"focus_travela");
+        //}
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated,String name) {
