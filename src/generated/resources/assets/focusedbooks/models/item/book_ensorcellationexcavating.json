@@ -2,7 +2,7 @@
   "parent": "focusedbooks:item/bookguide",
   "textures": {
     "bookguide": "focusedbooks:item/bookguide_default",
-    "bookguidetop": "focusedbooks:item/bookguidetop_default",
+    "bookguidetop": "focusedbooks:item/bookguidetop_digger",
     "bookguideaccent": "focusedbooks:item/bookguideaccent_default"
   }
 }

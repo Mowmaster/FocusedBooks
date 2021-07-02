@@ -1,15 +1,23 @@
 package com.mowmaster.focusedbooks.data.Client;
 
+import com.google.common.collect.Maps;
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.references.Reference;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static com.mowmaster.focusedbooks.items.ItemEnchantableBook.*;
+import static net.minecraft.enchantment.EnchantmentType.*;
 
 public class ItemModelProviderGen extends net.minecraftforge.client.model.generators.ItemModelProvider {
 
@@ -278,41 +286,39 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
                 .texture("bookguideaccent", "item/bookguideaccent_default");
     }
 
+
     private String getBookTop(EnchantmentType type)
     {
         String returner = "bookguidetop_default";
-        switch (type)
-        {
-            case ARMOR: returner = "bookguidetop_armor";
-            break;
-            case ARMOR_HEAD: returner = "bookguidetop_helm";
-            break;
-            case ARMOR_CHEST: returner = "bookguidetop_chest";
-            break;
-            case ARMOR_LEGS: returner = "bookguidetop_legs";
-            break;
-            case ARMOR_FEET: returner = "bookguidetop_feet";
-            break;
-            case WEAPON: returner = "bookguidetop_weapon";
-            break;
-            case DIGGER: returner = "bookguidetop_digger";
-            break;
-            case FISHING_ROD: returner = "bookguidetop_fish";
-            break;
-            case TRIDENT: returner = "bookguidetop_trident";
-            break;
-            case BREAKABLE: returner = "bookguidetop_breakable";
-            break;
-            case BOW: returner = "bookguidetop_bow";
-            break;
-            case WEARABLE: returner = "bookguidetop_wearable";
-            break;
-            case CROSSBOW: returner = "bookguidetop_crossbow";
-            break;
-            case VANISHABLE: returner = "bookguidetop_default";
-            break;
-        }
+        Map<EnchantmentType,String> myMap = new HashMap<EnchantmentType,String>() {{
+            put(ARMOR, "bookguidetop_armor");
+            put(ARMOR_HEAD, "bookguidetop_helm");
+            put(ARMOR_CHEST, "bookguidetop_chest");
+            put(ARMOR_LEGS, "bookguidetop_legs");
+            put(ARMOR_FEET, "bookguidetop_feet");
+            put(WEAPON, "bookguidetop_weapon");
+            put(DIGGER, "bookguidetop_digger");
+            put(FISHING_ROD, "bookguidetop_fish");
+            put(TRIDENT, "bookguidetop_trident");
+            put(BREAKABLE, "bookguidetop_breakable");
+            put(BOW, "bookguidetop_bow");
+            put(WEARABLE, "bookguidetop_wearable");
+            put(CROSSBOW, "bookguidetop_crossbow");
+            put(VANISHABLE, "bookguidetop_default");
+            put(STRADDLEBOARD, "bookguidetop_straddleboard");
+            put(ENCHANTABLE, "bookguidetop_default");
+            put(HOE, "bookguidetop_hoe");
+            put(PICKAXE_OR_SHOVEL, "bookguidetop_digger");
+            put(SWORD_OR_AXE, "bookguidetop_weapon");
+            put(SWORD_OR_AXE_OR_CROSSBOW, "bookguidetop_weapon");
+            put(KNIFE, "bookguidetop_knife");
+            put(GWR_GUN, "bookguidetop_gun");
+            put(HAMMA, "bookguidetop_hammer");
+            put(PEDESTALS, "bookguidetop_pedestals");
+            put(TATELE, "bookguidetop_anchor");
+        }};
 
-        return returner;
+        if(myMap.containsKey(type))return myMap.get(type);
+        else return returner;
     }
 }

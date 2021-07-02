@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "apotheosis",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "focusedbooks:apotheosis",
+        "ingredients": [
+          {
+            "item": "minecraft:book"
+          },
+          {
+            "item": "focusedbooks:focus_apoth"
+          },
+          {
+            "item": "minecraft:glass"
+          }
+        ],
+        "result": {
+          "item": "focusedbooks:book_apothreflective"
+        }
+      }
+    }
+  ]
+}
