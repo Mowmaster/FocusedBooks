@@ -200,7 +200,7 @@ public class ItemEnchantableBook extends BookItem {
     }
 
 
-    public static final Item PROT = new ItemEnchantableBook(Items.DIAMOND_HELMET,"minecraft:protection",EnchantmentType.ARMOR, 5592405, Items.LEATHER, true ).setRegistryName(new ResourceLocation(MODID, "book_protection"));//Leather
+    public static final Item PROT = new ItemEnchantableBook(Items.DIAMOND_HELMET,"minecraft:protection",EnchantmentType.ARMOR, 11206655, Items.LEATHER, true ).setRegistryName(new ResourceLocation(MODID, "book_protection"));//Leather
     public static final Item FIRE_PROT = new ItemEnchantableBook(Items.DIAMOND_HELMET,"minecraft:fire_protection",EnchantmentType.ARMOR, 16733440,  Items.MAGMA_CREAM, true ).setRegistryName(new ResourceLocation(MODID, "book_fireprotection"));//magma_cream
     public static final Item FEATHER = new ItemEnchantableBook(Items.DIAMOND_BOOTS,"minecraft:feather_falling",EnchantmentType.ARMOR_FEET, 16777215,  Items.FEATHER, true ).setRegistryName(new ResourceLocation(MODID, "book_featherfall"));//feather
     public static final Item BLAST_PROT = new ItemEnchantableBook(Items.DIAMOND_HELMET,"minecraft:blast_protection",EnchantmentType.ARMOR, 16755200,  Items.GUNPOWDER, true ).setRegistryName(new ResourceLocation(MODID, "book_blastprotection"));//gunpowder

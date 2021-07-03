@@ -20,7 +20,7 @@
   "focusedbooks.disabled": "This Book has Been Disabled Until Further Notice",
   "focusedbooks.notOnBooks": "This Enchantment Cannot be Obtained with Focused Books",
   "focusedbooks.cantEnchantTable": "This Enchantment Cannot be Obtained in a Normal Enchanting Table",
-  "focusedbooks.isTreasure": "This Enchantment is a Treasure Type Enchantment, and Cannot be enchanted in normal enchantment tables.",
+  "focusedbooks.isTreasure": "This Enchantment is a Treasure Type Enchantment, and Cannot be Obtained in a Normal Enchanting Table",
   "focusedbooks.minNeeded": "Est. Min Level Required: ",
   "focusedbooks.maxNeeded": "Est. Max Level Allowed: ",
 
