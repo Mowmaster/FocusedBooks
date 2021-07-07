@@ -124,7 +124,7 @@ public class ItemEnchantableBook extends BookItem {
                 EnchantmentHelper.setEnchantments(enchants,newBook);
                 PlayerEntity player = (PlayerEntity) p_77663_3_;
                 p_77663_1_.shrink(1);
-                ItemHandlerHelper.giveItemToPlayer(player,newBook,player.inventory.getSuitableHotbarSlot());
+                ItemHandlerHelper.giveItemToPlayer(player,newBook,-1);
             }
         }
     }
