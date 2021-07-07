@@ -6,6 +6,7 @@ import net.minecraft.enchantment.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.*;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
@@ -123,7 +124,7 @@ public class ItemEnchantableBook extends BookItem {
                 EnchantmentHelper.setEnchantments(enchants,newBook);
                 PlayerEntity player = (PlayerEntity) p_77663_3_;
                 p_77663_1_.shrink(1);
-                ItemHandlerHelper.giveItemToPlayer(player,newBook,player.inventory.findSlotMatchingItem(p_77663_1_));
+                ItemHandlerHelper.giveItemToPlayer(player,newBook,player.inventory.getSuitableHotbarSlot());
             }
         }
     }
