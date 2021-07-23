@@ -1,21 +1,20 @@
 package com.mowmaster.focusedbooks.data.Client;
 
-import com.google.common.collect.Maps;
+import com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals;
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.references.Reference;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.ModList;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals.PEDESTALS;
 import static com.mowmaster.focusedbooks.items.ItemEnchantableBook.*;
 import static net.minecraft.enchantment.EnchantmentType.*;
 
@@ -259,12 +258,12 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
         //}
 
         //if(ModList.get().isLoaded("pedestals")) {
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_ADVANCED);
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_AREA);
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_CAP);
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_MAGNET);
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_RANGE);
-            builderModified(customBook,ItemEnchantableBook.PEDESTALS_SPEED);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_ADVANCED);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_AREA);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_CAP);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_MAGNET);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_RANGE);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_SPEED);
         builder(itemGenerated,"focus_pedestals");
         //}
 

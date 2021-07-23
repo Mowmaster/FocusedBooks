@@ -1,12 +1,12 @@
 package com.mowmaster.focusedbooks.items;
 
+import com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.*;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
@@ -338,14 +338,6 @@ public class ItemEnchantableBook extends BookItem {
 
     public static final Item NATURES_MEND = new ItemEnchantableBook(Items.BOW,"naturesaura:aura_mending",EnchantmentType.BREAKABLE, 5635925,  Blocks.OAK_LEAVES, true ).setRegistryName(new ResourceLocation(MODID, "book_naturesauramending"));
 
-    public static EnchantmentType PEDESTALS = EnchantmentType.create("pedestalupgrade", (item -> item.getItemEnchantability(new ItemStack(item)) > 0));
-    public static final Item PEDESTALS_ADVANCED = new ItemEnchantableBook(Items.BOOK,"pedestals:upgradeadvanced",PEDESTALS, 16776960,  Items.NETHER_STAR, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgradeadvanced"));
-    public static final Item PEDESTALS_AREA = new ItemEnchantableBook(Items.BOOK,"pedestals:upgradearea",PEDESTALS, 16776960,  Items.IRON_INGOT, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgradearea"));
-    public static final Item PEDESTALS_CAP = new ItemEnchantableBook(Items.BOOK,"pedestals:upgradecapacity",PEDESTALS, 16776960,  Items.EMERALD, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgradecapacity"));
-    public static final Item PEDESTALS_MAGNET = new ItemEnchantableBook(Items.BOOK,"pedestals:upgrademagnet",PEDESTALS, 16776960,  Blocks.HOPPER, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgrademagnet"));
-    public static final Item PEDESTALS_RANGE = new ItemEnchantableBook(Items.BOOK,"pedestals:upgraderange",PEDESTALS, 16776960,  Items.GOLD_INGOT, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgraderange"));
-    public static final Item PEDESTALS_SPEED = new ItemEnchantableBook(Items.BOOK,"pedestals:upgradespeed",PEDESTALS, 16776960,  Items.DIAMOND, false ).setRegistryName(new ResourceLocation(MODID, "book_pedestalsupgradespeed"));
-
     public static EnchantmentType TARANGE = EnchantmentType.create("travel_anchors_teleportable", (item -> item.getItemEnchantability(new ItemStack(item)) > 0));
     public static EnchantmentType TATELE = EnchantmentType.create("travel_anchors_teleportable_no_staff", (item -> item.getItemEnchantability(new ItemStack(item)) > 0));
     public static final Item TRAVELA_RANGE = new ItemEnchantableBook(Items.BOOK,"travel_anchors:range",TARANGE, 16755370,  Items.POPPED_CHORUS_FRUIT, false ).setRegistryName(new ResourceLocation(MODID, "book_travelarange"));
@@ -501,18 +493,13 @@ public class ItemEnchantableBook extends BookItem {
             event.getRegistry().register(NATURES_MEND);
         }
 
-        if(ModList.get().isLoaded("pedestals")) {
-            event.getRegistry().register(PEDESTALS_ADVANCED);
-            event.getRegistry().register(PEDESTALS_AREA);
-            event.getRegistry().register(PEDESTALS_CAP);
-            event.getRegistry().register(PEDESTALS_MAGNET);
-            event.getRegistry().register(PEDESTALS_RANGE);
-            event.getRegistry().register(PEDESTALS_SPEED);
-        }
-
         if(ModList.get().isLoaded("travel_anchors")) {
             event.getRegistry().register(TRAVELA_RANGE);
             event.getRegistry().register(TRAVELA_TELE);
+        }
+
+        if(ModList.get().isLoaded("pedestals")) {
+            ItemEnchantableBookPedestals.onItemRegistryReady(event);
         }
     }
 
@@ -665,18 +652,14 @@ public class ItemEnchantableBook extends BookItem {
             event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},NATURES_MEND);
         }
 
-        if(ModList.get().isLoaded("pedestals")) {
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_ADVANCED);
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_AREA);
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_CAP);
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_MAGNET);
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_RANGE);
-            event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},PEDESTALS_SPEED);
-        }
-
         if(ModList.get().isLoaded("travel_anchors")) {
             event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},TRAVELA_RANGE);
             event.getItemColors().register((itemstack, tintIndex) -> {if (tintIndex == 1){return getColor(itemstack);} else {return -1;}},TRAVELA_TELE);
         }
+
+        if(ModList.get().isLoaded("pedestals")) {
+            ItemEnchantableBookPedestals.handleItemColors(event);
+        }
+
     }
 }

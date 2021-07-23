@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.2_hotfix'
+version = '0.3'
 group = 'com.mowmaster.focusedbooks' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'focusedbooks'
 
@@ -120,6 +120,10 @@ repositories {
     maven {
         url "https://dvs1.progwml6.com/files/maven"
     }
+    maven {
+        // for any curseforge mod
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
@@ -128,8 +132,14 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.32'
 
+    //JEI
     compileOnly fg.deobf("mezz.jei:jei-1.16.4:7.6.0.58:api")
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.4:7.6.0.58")
+
+    //Pedestals
+    //compileOnly fg.deobf("curse.maven:pedestals-392039:3397977")
+    //runtimeOnly fg.deobf("curse.maven:pedestals-392039:3397977")
+    //https://www.curseforge.com/minecraft/mc-mods/pedestals/files/3397977
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
