@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:shield"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothshieldbash"
+          "item": "minecraft:air"
         }
       }
     }

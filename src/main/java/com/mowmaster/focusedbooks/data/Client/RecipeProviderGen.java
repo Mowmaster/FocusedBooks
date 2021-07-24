@@ -4,19 +4,20 @@ import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.items.ItemFocus;
 import com.mowmaster.focusedbooks.references.Reference;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.ShapedRecipeBuilder;
-import net.minecraft.data.ShapelessRecipeBuilder;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import net.minecraftforge.common.data.ForgeRecipeProvider;
 
 import java.util.function.Consumer;
 
-public class RecipeProviderGen extends ForgeRecipeProvider {
+public class RecipeProviderGen extends RecipeProvider {
     public RecipeProviderGen(DataGenerator generatorIn) {
         super(generatorIn);
     }
@@ -26,8 +27,7 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
         return "Focused Books - Recipes";
     }
 
-    @Override
-    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 
         makeSimpleRecipe(consumer, ":vanilla",ItemEnchantableBook.PROT);
         makeSimpleRecipe(consumer, ":vanilla",ItemEnchantableBook.FIRE_PROT);
@@ -202,7 +202,7 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
                 .save(consumer);
     }
 
-    public void makeSimpleRecipe(Consumer<IFinishedRecipe> consumer,String groupName, Item item)
+    public void makeSimpleRecipe(Consumer<FinishedRecipe> consumer,String groupName, Item item)
     {
         ShapelessRecipeBuilder.shapeless(item)
                 .group(Reference.MODID + groupName)
@@ -213,7 +213,7 @@ public class RecipeProviderGen extends ForgeRecipeProvider {
                 .save(consumer);
     }
 
-    public void makeSimpleModRecipeRecipe(Consumer<IFinishedRecipe> consumer,String modid, Item focus, Item item)
+    public void makeSimpleModRecipeRecipe(Consumer<FinishedRecipe> consumer,String modid, Item focus, Item item)
     {
         /*
         * Someday i may try to make this work, but till then, will use custom item

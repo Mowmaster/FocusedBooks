@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_arsn"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:ghast_tear"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_arsnmanaregen"
+          "item": "minecraft:air"
         }
       }
     }

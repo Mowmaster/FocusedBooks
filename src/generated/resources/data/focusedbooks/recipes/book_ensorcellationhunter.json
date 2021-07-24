@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:arrow"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationhunter"
+          "item": "minecraft:air"
         }
       }
     }

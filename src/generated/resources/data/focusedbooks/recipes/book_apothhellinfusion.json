@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:netherrack"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothhellinfusion"
+          "item": "minecraft:air"
         }
       }
     }

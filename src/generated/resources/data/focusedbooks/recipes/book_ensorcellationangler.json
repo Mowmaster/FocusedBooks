@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:tropical_fish"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationangler"
+          "item": "minecraft:air"
         }
       }
     }

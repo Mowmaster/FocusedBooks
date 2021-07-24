@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:glass_bottle"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationmagicprotection"
+          "item": "minecraft:air"
         }
       }
     }

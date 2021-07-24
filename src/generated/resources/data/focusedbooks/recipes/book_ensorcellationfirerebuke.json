@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:fire_charge"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationfirerebuke"
+          "item": "minecraft:air"
         }
       }
     }

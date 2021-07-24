@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:piston"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationreach"
+          "item": "minecraft:air"
         }
       }
     }

@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:golden_sword"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationcursefool"
+          "item": "minecraft:air"
         }
       }
     }

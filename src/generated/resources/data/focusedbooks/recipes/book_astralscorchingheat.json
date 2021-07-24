@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_astral"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:blast_furnace"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_astralscorchingheat"
+          "item": "minecraft:air"
         }
       }
     }

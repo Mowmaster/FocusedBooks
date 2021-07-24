@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_farmersd"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:iron_sword"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_farmersbackstabbing"
+          "item": "minecraft:air"
         }
       }
     }

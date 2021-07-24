@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:golden_hoe"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationtilling"
+          "item": "minecraft:air"
         }
       }
     }

@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_arsn"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:blaze_rod"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_arsnmanaboost"
+          "item": "minecraft:air"
         }
       }
     }

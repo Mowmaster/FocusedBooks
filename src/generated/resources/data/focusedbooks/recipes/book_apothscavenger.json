@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:wheat_seeds"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothscavenger"
+          "item": "minecraft:air"
         }
       }
     }

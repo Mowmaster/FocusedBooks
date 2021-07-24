@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:diamond"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationpilfering"
+          "item": "minecraft:air"
         }
       }
     }

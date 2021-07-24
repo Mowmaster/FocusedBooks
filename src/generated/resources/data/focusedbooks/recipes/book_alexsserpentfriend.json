@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_alexs"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:ink_sac"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_alexsserpentfriend"
+          "item": "minecraft:air"
         }
       }
     }

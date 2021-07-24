@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_travela"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:ender_pearl"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_travelateleportation"
+          "item": "minecraft:air"
         }
       }
     }

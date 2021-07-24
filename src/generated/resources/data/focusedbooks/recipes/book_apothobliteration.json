@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:lava_bucket"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothobliteration"
+          "item": "minecraft:air"
         }
       }
     }

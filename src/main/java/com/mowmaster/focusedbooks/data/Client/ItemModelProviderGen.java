@@ -1,22 +1,22 @@
 package com.mowmaster.focusedbooks.data.Client;
 
-import com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals;
+//import com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals;
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.references.Reference;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.enchantment.EnchantmentType;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
+//import static com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals.PEDESTALS;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.mowmaster.focusedbooks.compat.pedestals.ItemEnchantableBookPedestals.PEDESTALS;
 import static com.mowmaster.focusedbooks.items.ItemEnchantableBook.*;
-import static net.minecraft.enchantment.EnchantmentType.*;
+import static net.minecraft.world.item.enchantment.EnchantmentCategory.*;
 
 public class ItemModelProviderGen extends net.minecraftforge.client.model.generators.ItemModelProvider {
 
@@ -258,12 +258,12 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
         //}
 
         //if(ModList.get().isLoaded("pedestals")) {
-            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_ADVANCED);
+            /*builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_ADVANCED);
             builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_AREA);
             builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_CAP);
             builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_MAGNET);
             builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_RANGE);
-            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_SPEED);
+            builderModified(customBook,ItemEnchantableBookPedestals.PEDESTALS_SPEED);*/
         builder(itemGenerated,"focus_pedestals");
         //}
 
@@ -286,10 +286,10 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
     }
 
 
-    private String getBookTop(EnchantmentType type)
+    private String getBookTop(EnchantmentCategory type)
     {
         String returner = "bookguidetop_default";
-        Map<EnchantmentType,String> myMap = new HashMap<EnchantmentType,String>() {{
+        Map<EnchantmentCategory,String> myMap = new HashMap<EnchantmentCategory,String>() {{
             put(ARMOR, "bookguidetop_armor");
             put(ARMOR_HEAD, "bookguidetop_helm");
             put(ARMOR_CHEST, "bookguidetop_chest");
@@ -313,7 +313,7 @@ public class ItemModelProviderGen extends net.minecraftforge.client.model.genera
             put(KNIFE, "bookguidetop_knife");
             put(GWR_GUN, "bookguidetop_gun");
             put(HAMMA, "bookguidetop_hammer");
-            put(PEDESTALS, "bookguidetop_pedestals");
+            //put(PEDESTALS, "bookguidetop_pedestals");
             put(TATELE, "bookguidetop_anchor");
         }};
 

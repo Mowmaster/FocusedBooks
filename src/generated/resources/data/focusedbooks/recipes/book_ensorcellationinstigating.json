@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:ender_pearl"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationinstigating"
+          "item": "minecraft:air"
         }
       }
     }

@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:glistering_melon_slice"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationcursemercy"
+          "item": "minecraft:air"
         }
       }
     }

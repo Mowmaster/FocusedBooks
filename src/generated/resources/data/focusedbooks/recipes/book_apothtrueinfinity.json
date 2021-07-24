@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:end_stone"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothtrueinfinity"
+          "item": "minecraft:air"
         }
       }
     }

@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:iron_axe"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationdamageillager"
+          "item": "minecraft:air"
         }
       }
     }

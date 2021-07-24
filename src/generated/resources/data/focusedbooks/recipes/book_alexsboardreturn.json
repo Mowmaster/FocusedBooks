@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_alexs"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:ender_eye"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_alexsboardreturn"
+          "item": "minecraft:air"
         }
       }
     }

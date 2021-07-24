@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:emerald"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothbaneofillagers"
+          "item": "minecraft:air"
         }
       }
     }

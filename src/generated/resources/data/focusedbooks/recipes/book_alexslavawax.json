@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_alexs"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:honeycomb"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_alexslavawax"
+          "item": "minecraft:air"
         }
       }
     }

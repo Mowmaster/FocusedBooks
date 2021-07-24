@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_gunsnroses"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:emerald"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_gunssleightofhand"
+          "item": "minecraft:air"
         }
       }
     }

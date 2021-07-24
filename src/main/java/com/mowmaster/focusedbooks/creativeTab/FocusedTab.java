@@ -2,12 +2,12 @@ package com.mowmaster.focusedbooks.creativeTab;
 
 import com.mowmaster.focusedbooks.items.ItemEnchantableBook;
 import com.mowmaster.focusedbooks.references.Reference;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
 
-public class CreativeTab extends ItemGroup
+public class FocusedTab extends CreativeModeTab
 {
-    public CreativeTab() {
+    public FocusedTab() {
         super(Reference.MODID+"_tab");
     }
 

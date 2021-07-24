@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_gunsnroses"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:target"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_gunsbullseye"
+          "item": "minecraft:air"
         }
       }
     }

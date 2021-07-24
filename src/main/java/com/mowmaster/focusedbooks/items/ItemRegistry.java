@@ -1,6 +1,6 @@
 package com.mowmaster.focusedbooks.items;
 
-import net.minecraft.item.Item;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.event.RegistryEvent;
 

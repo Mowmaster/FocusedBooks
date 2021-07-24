@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_ensorcellation"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:snowball"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_ensorcellationfrostaspect"
+          "item": "minecraft:air"
         }
       }
     }

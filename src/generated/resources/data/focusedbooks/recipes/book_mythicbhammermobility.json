@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_mythicb"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:netherite_pickaxe"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_mythicbhammermobility"
+          "item": "minecraft:air"
         }
       }
     }

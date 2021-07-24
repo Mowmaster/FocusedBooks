@@ -16,14 +16,14 @@
             "item": "minecraft:book"
           },
           {
-            "item": "focusedbooks:focus_apoth"
+            "item": "minecraft:air"
           },
           {
             "item": "minecraft:experience_bottle"
           }
         ],
         "result": {
-          "item": "focusedbooks:book_apothknowledge"
+          "item": "minecraft:air"
         }
       }
     }
