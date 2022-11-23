@@ -9,12 +9,13 @@
     }
   ],
   "result": {
-    "item": "focusedbooks:basebook",
+    "item": "focusedbooks:focusbook",
     "type": "forge:nbt",
     "nbt": {
       "focusedbooks_covercolor": 16777215,
       "focusedbooks_accentcolor": 16643423,
       "focusedbooks_pagecolor": 11706496,
+      "focusedbooks_bookcovervariant": 5,
       "focusedbooks_enchantment": "minecraft:mending"
     }
   }

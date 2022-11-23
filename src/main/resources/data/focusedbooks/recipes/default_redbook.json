@@ -9,12 +9,13 @@
     }
   ],
   "result": {
-    "item": "focusedbooks:basebook",
+    "item": "focusedbooks:focusbook",
     "type": "forge:nbt",
     "nbt": {
       "focusedbooks_covercolor": 11141120,
       "focusedbooks_accentcolor": 16643423,
       "focusedbooks_pagecolor": 11706496,
+      "focusedbooks_bookcovervariant": 19,
       "focusedbooks_enchantment": "minecraft:sharpness",
       "focusedbooks_allowovercombining": true,
       "focusedbooks_maxlevel": 10

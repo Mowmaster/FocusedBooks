@@ -1,6 +1,6 @@
 package com.mowmaster.focusedbooks.Registry;
 
-import com.mowmaster.focusedbooks.Items.BaseEnchantableBook;
+import com.mowmaster.focusedbooks.Items.BookFocused;
 import com.mowmaster.mowlib.Tabs.MowLibTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,8 +16,8 @@ public class DeferredItemRegistry
             DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
 
-    public static final RegistryObject<Item> BASEBOOK = ITEMS.register("basebook",
-            () -> new BaseEnchantableBook(new Item.Properties().tab(MowLibTab.TAB_ITEMS)));
+    public static final RegistryObject<Item> BASEBOOK = ITEMS.register("focusbook",
+            () -> new BookFocused(new Item.Properties().tab(MowLibTab.TAB_ITEMS)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,9 +1,11 @@
 {
 
-  "item.focusedbooks.basebook": "Focused Book",
+  "item.focusedbooks.focusbook": "Focused Book",
   "focusedbooks.focusedbook": " Focus Book",
+  "focusedbooks.levelrequired": "Estimated Enchantment Level Required: ",
   "focusedbooks.minlevel": "Min Level: ",
   "focusedbooks.maxlevel": "Max Level: ",
+  "focusedbooks.minmaxlevel": "Min/Max Level: ",
   "focusedbooks.treasurebook": "This is a Treasure Type Enchant, It may not be enchantable in tables that do not allow for obtaining these sort of enchantments."
 
 }

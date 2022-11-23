@@ -122,7 +122,7 @@ public class AnvilCombineBooks
                         return;
                     }
 
-                    if (!itemstack1.isEmpty() && itemstack2.isEnchanted() && itemstack2.getCount() == 1 ) {
+                    if (!itemstack1.isEmpty() && ((itemstack1.getItem() instanceof BaseEnchantableBook)?(itemstack1.getCount() == 1):(true)) && itemstack2.isEnchanted() && itemstack2.getCount() == 1 ) {
                         int k2 = itemstack1.getBaseRepairCost();
                         if (!itemstack2.isEmpty() && k2 < itemstack2.getBaseRepairCost()) {
                             k2 = itemstack2.getBaseRepairCost();

@@ -2,7 +2,7 @@
   "parent": "focusedbooks:item/books/basebook",
   "textures": {
     "0": "focusedbooks:item/models/books/basebookcover",
-    "1": "focusedbooks:item/models/books/basebookcoverfront",
+    "1": "focusedbooks:item/models/books/covers/cover_feet",
     "2": "focusedbooks:item/models/books/basebookaccents"
   }
 }

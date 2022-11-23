@@ -25,5 +25,7 @@ public class ClientRegistry
         }
         else {return -1;}
         }, DeferredItemRegistry.BASEBOOK.get());
+
+        ItemModelProperties.FocusedBooksItemVariants(DeferredItemRegistry.BASEBOOK.get());
     }
 }

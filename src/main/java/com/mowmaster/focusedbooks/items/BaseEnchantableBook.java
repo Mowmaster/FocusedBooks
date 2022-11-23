@@ -45,6 +45,22 @@ public class BaseEnchantableBook extends BookItem {
         return MowLibCompoundTagUtils.readIntegerFromNBT(MODID, stack.getOrCreateTag(), "_pagecolor");
     }
 
+    public static int getRenderBookType(ItemStack stack)
+    {
+        return MowLibCompoundTagUtils.readIntegerFromNBT(MODID, stack.getOrCreateTag(), "_bookvariant");
+    }
+
+    public static int getRenderBookCover(ItemStack stack)
+    {
+        return MowLibCompoundTagUtils.readIntegerFromNBT(MODID, stack.getOrCreateTag(), "_bookcovervariant");
+    }
+
+    /*@Override
+    public int getMaxStackSize(ItemStack stack) {
+        if(stack.isEnchanted()) return 1;
+        return super.getMaxStackSize(stack);
+    }*/
+
     /*=============================
     ====== End of Setup Stuff =====
     =============================*/
@@ -141,7 +157,8 @@ public class BaseEnchantableBook extends BookItem {
             int level = EnchantmentHelper.getTagEnchantmentLevel(getEnchantment(p_41458_),p_41458_);
             String levelstring = Component.translatable("enchantment.level."+level).getString();
             String ending = Component.translatable(MODID + ".focusedbook").getString();
-            MutableComponent comp = Component.translatable(getEnchantment(p_41458_).getDescriptionId()).append((level != 0)?(" "+levelstring+ending):(ending));
+            MutableComponent comp = Component.translatable(getEnchantment(p_41458_).getDescriptionId()).append((level != 0)?(((level == maxEnchantLevel(p_41458_) && level ==1)?(""):(" "+levelstring))+ending):(ending));
+
             return MowLibNameComponentUtils.createComponentName(comp,"");
         }
 
@@ -152,21 +169,53 @@ public class BaseEnchantableBook extends BookItem {
     public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
         if(getEnchantment(p_41421_) != null)
         {
-            if(getEnchantment(p_41421_).isTreasureOnly())
+            if(!p_41421_.isEnchanted())
             {
-                MutableComponent treasure = Component.translatable(MODID + ".treasurebook").withStyle(ChatFormatting.LIGHT_PURPLE);
-                MowLibTooltipUtils.addTooltipMessage(p_41423_,p_41421_,treasure);
+                if(getEnchantment(p_41421_).isTreasureOnly())
+                {
+                    MutableComponent treasure = Component.translatable(MODID + ".treasurebook").withStyle(ChatFormatting.LIGHT_PURPLE);
+                    MowLibTooltipUtils.addTooltipMessage(p_41423_,p_41421_,treasure);
+                }
+
+                MutableComponent levelrequired = Component.translatable(MODID + ".levelrequired").withStyle(ChatFormatting.GOLD);
+                levelrequired.append(Component.literal((getEnchantment(p_41421_).getMinCost(0)<=0)?(0+ ""):(getEnchantment(p_41421_).getMinCost(0)+ "")).withStyle(ChatFormatting.AQUA));
+                MowLibTooltipUtils.addTooltipMessage(p_41423_,levelrequired);
+
+                if(getEnchantment(p_41421_).getMinLevel() == maxEnchantLevel(p_41421_))
+                {
+                    MutableComponent minMaxLevel = Component.translatable(MODID + ".minmaxlevel").withStyle(ChatFormatting.GREEN);
+                    minMaxLevel.append(Component.literal(maxEnchantLevel(p_41421_) + "").withStyle(ChatFormatting.WHITE));
+                    MowLibTooltipUtils.addTooltipMessage(p_41423_,minMaxLevel);
+                }
+                else
+                {
+                    MutableComponent maxLevel = Component.translatable(MODID + ".maxlevel").withStyle(ChatFormatting.RED);
+                    maxLevel.append(Component.literal(maxEnchantLevel(p_41421_) + "").withStyle((getEnchantment(p_41421_).getMaxLevel()<maxEnchantLevel(p_41421_))?(ChatFormatting.GOLD):(ChatFormatting.WHITE)));
+                    MowLibTooltipUtils.addTooltipMessage(p_41423_,maxLevel);
+
+                    MutableComponent minLevel = Component.translatable(MODID + ".minlevel").withStyle(ChatFormatting.GREEN);
+                    minLevel.append(Component.literal(getEnchantment(p_41421_).getMinLevel() + "").withStyle(ChatFormatting.WHITE));
+                    MowLibTooltipUtils.addTooltipMessage(p_41423_,minLevel);
+                }
+
+                super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
             }
+            else
+            {
+                int level = EnchantmentHelper.getTagEnchantmentLevel(getEnchantment(p_41421_),p_41421_);
+                if(level < maxEnchantLevel(p_41421_))
+                {
+                    MutableComponent maxLevel = Component.translatable(MODID + ".maxlevel").withStyle(ChatFormatting.RED);
+                    maxLevel.append(Component.literal(maxEnchantLevel(p_41421_) + "").withStyle((getEnchantment(p_41421_).getMaxLevel()<maxEnchantLevel(p_41421_))?(ChatFormatting.GOLD):(ChatFormatting.WHITE)));
+                    MowLibTooltipUtils.addTooltipMessage(p_41423_,maxLevel);
+                }
 
-            MutableComponent maxLevel = Component.translatable(MODID + ".maxlevel").withStyle(ChatFormatting.RED);
-            maxLevel.append(Component.literal(maxEnchantLevel(p_41421_) + "").withStyle((getEnchantment(p_41421_).getMaxLevel()<maxEnchantLevel(p_41421_))?(ChatFormatting.GOLD):(ChatFormatting.WHITE)));
-            MowLibTooltipUtils.addTooltipMessage(p_41423_,maxLevel);
-
-            MutableComponent minLevel = Component.translatable(MODID + ".minlevel").withStyle(ChatFormatting.GREEN);
-            minLevel.append(Component.literal(getEnchantment(p_41421_).getMinLevel() + "").withStyle(ChatFormatting.WHITE));
-            MowLibTooltipUtils.addTooltipMessage(p_41423_,minLevel);
+                super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+            }
         }
-
-        super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+        else
+        {
+            super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+        }
     }
 }

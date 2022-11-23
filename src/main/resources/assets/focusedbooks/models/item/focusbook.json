@@ -1,0 +1,31 @@
+{
+  "parent": "focusedbooks:item/books/basebook",
+  "textures": {
+    "0": "focusedbooks:item/models/books/basebookcover",
+    "1": "focusedbooks:item/models/books/basebookcoverfront",
+    "2": "focusedbooks:item/models/books/basebookaccents"
+  },
+  "overrides": [
+    { "predicate": { "focusedbooks:cover_variant": 0}, "model": "focusedbooks:item/books/focused/default"},
+    { "predicate": { "focusedbooks:cover_variant": 1}, "model": "focusedbooks:item/books/focused/anchor"},
+    { "predicate": { "focusedbooks:cover_variant": 2}, "model": "focusedbooks:item/books/focused/animal"},
+    { "predicate": { "focusedbooks:cover_variant": 3}, "model": "focusedbooks:item/books/focused/armor"},
+    { "predicate": { "focusedbooks:cover_variant": 4}, "model": "focusedbooks:item/books/focused/bow"},
+    { "predicate": { "focusedbooks:cover_variant": 5}, "model": "focusedbooks:item/books/focused/breakable"},
+    { "predicate": { "focusedbooks:cover_variant": 6}, "model": "focusedbooks:item/books/focused/chest"},
+    { "predicate": { "focusedbooks:cover_variant": 7}, "model": "focusedbooks:item/books/focused/crossbow"},
+    { "predicate": { "focusedbooks:cover_variant": 8}, "model": "focusedbooks:item/books/focused/digger"},
+    { "predicate": { "focusedbooks:cover_variant": 9}, "model": "focusedbooks:item/books/focused/feet"},
+    { "predicate": { "focusedbooks:cover_variant": 10}, "model": "focusedbooks:item/books/focused/fish"},
+    { "predicate": { "focusedbooks:cover_variant": 11}, "model": "focusedbooks:item/books/focused/gun"},
+    { "predicate": { "focusedbooks:cover_variant": 12}, "model": "focusedbooks:item/books/focused/hammer"},
+    { "predicate": { "focusedbooks:cover_variant": 13}, "model": "focusedbooks:item/books/focused/helm"},
+    { "predicate": { "focusedbooks:cover_variant": 14}, "model": "focusedbooks:item/books/focused/hoe"},
+    { "predicate": { "focusedbooks:cover_variant": 15}, "model": "focusedbooks:item/books/focused/knife"},
+    { "predicate": { "focusedbooks:cover_variant": 16}, "model": "focusedbooks:item/books/focused/legs"},
+    { "predicate": { "focusedbooks:cover_variant": 17}, "model": "focusedbooks:item/books/focused/pedestal"},
+    { "predicate": { "focusedbooks:cover_variant": 18}, "model": "focusedbooks:item/books/focused/trident"},
+    { "predicate": { "focusedbooks:cover_variant": 19}, "model": "focusedbooks:item/books/focused/weapon"},
+    { "predicate": { "focusedbooks:cover_variant": 20}, "model": "focusedbooks:item/books/focused/wearable"}
+  ]
+}
