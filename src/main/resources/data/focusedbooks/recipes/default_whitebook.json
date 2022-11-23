@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "tag": "forge:dyes/white"
+    }
+  ],
+  "result": {
+    "item": "focusedbooks:basebook",
+    "type": "forge:nbt",
+    "nbt": {
+      "focusedbooks_covercolor": 16777215,
+      "focusedbooks_accentcolor": 16643423,
+      "focusedbooks_pagecolor": 11706496,
+      "focusedbooks_enchantment": "minecraft:mending"
+    }
+  }
+}

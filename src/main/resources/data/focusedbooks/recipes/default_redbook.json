@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+  "result": {
+    "item": "focusedbooks:basebook",
+    "type": "forge:nbt",
+    "nbt": {
+      "focusedbooks_covercolor": 11141120,
+      "focusedbooks_accentcolor": 16643423,
+      "focusedbooks_pagecolor": 11706496,
+      "focusedbooks_enchantment": "minecraft:sharpness",
+      "focusedbooks_allowovercombining": true,
+      "focusedbooks_maxlevel": 10
+    }
+  }
+}

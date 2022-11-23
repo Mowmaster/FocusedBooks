@@ -1,8 +1,0 @@
-{
-  "parent": "focusedbooks:item/bookguide",
-  "textures": {
-    "bookguide": "focusedbooks:item/bookguide_default",
-    "bookguidetop": "focusedbooks:item/bookguidetop_helm",
-    "bookguideaccent": "focusedbooks:item/bookguideaccent_default"
-  }
-}
